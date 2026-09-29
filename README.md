@@ -96,13 +96,19 @@ This approach keeps the dashboard focused on **decision-support questions** rath
 
 ## 🖼️ Dashboard Visual Tour & Storytelling
 
-### 1. Executive Sales Dashboard
+### 1. Executive Overview Dashboard
+<p align="center">
+  <img src="./Overview%20Page.jpg" alt="Cookies & Chocolate Sales Performance — Overview Dashboard" width="95%">
+</p>
 
-The main dashboard consolidates the core commercial KPIs and provides a high-level view of revenue, profit, orders, target performance, product contribution, regional performance, and sales trends.
+The executive overview consolidates the core commercial KPIs and provides a high-level view of revenue, profit, orders, target achievement, product contribution, regional performance, and sales trends.
 
-> Dashboard preview assets can be added to the repository under `Dashboard Previews/` using the same standardized structure as the portfolio's other projects.
+### 2. Data Model & Relationships
+<p align="center">
+  <img src="./Model%20Page.png" alt="Cookies & Chocolate Sales Performance — Power BI Data Model" width="95%">
+</p>
 
----
+The model view shows the dimensional structure connecting transactional orders with product, customer, and date information to support consistent analytical reporting.
 
 ## 🏗️ Data Architecture & Star Schema
 
