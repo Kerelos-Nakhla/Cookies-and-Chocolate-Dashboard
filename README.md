@@ -15,13 +15,11 @@
 
 ## 📌 Executive Overview
 
-The **Cookies & Chocolate Sales Performance Dashboard** is an interactive business intelligence solution built in **Power BI** to analyze sales performance across products, customers, regions, and time.
+The **Cookies & Chocolate Sales Performance Dashboard** is an interactive **Power BI** business intelligence solution designed to evaluate sales performance across products, customers, regions, and time.
 
-The project transforms transactional order data into an executive-level analytical view that connects **revenue, profit, order volume, product contribution, regional performance, and target achievement**.
+The project transforms transactional order data into an executive analytical layer covering **revenue, profit, order volume, product contribution, regional performance, sales trends, and target achievement**.
 
-The analysis is designed to answer a practical commercial question:
-
-> **Where is the business generating revenue and profit, which products and regions drive performance, and how effectively is actual sales performance tracking against target?**
+> **Business question:** Where is the business generating revenue and profit, which products and regions drive performance, and how effectively is actual sales performance tracking against target?
 
 ---
 
@@ -30,135 +28,134 @@ The analysis is designed to answer a practical commercial question:
 | Metric | Value | Business Meaning |
 | :--- | :---: | :--- |
 | **Total Revenue** | **$4.68M** | Total sales generated across the analyzed transactions |
-| **Total Profit** | **$2.71M** | Profit generated after the modeled product costs |
-| **Profit Margin** | **57.94%** | Overall profitability of the analyzed sales portfolio |
-| **Total Orders** | **699** | Number of recorded customer orders |
-| **Target Performance** | **223.9% Above Target** | Actual sales significantly exceeded the modeled target |
-| **Analysis Period** | **2019–2020** | Period used for the reported time-trend analysis |
+| **Total Profit** | **$2.71M** | Profit generated across the analyzed sales portfolio |
+| **Profit Margin** | **57.94%** | Overall profitability of the analyzed sales |
+| **Total Orders** | **699** | Recorded customer orders |
+| **Target Performance** | **223.9% Above Target** | Actual sales exceeded the modeled target benchmark |
+| **Analysis Period** | **2019–2020** | Period covered by the reported time-trend analysis |
 
 ---
 
 ## 🎯 Business Problem & Objectives
 
-The dashboard was developed to provide management with a structured view of commercial performance and answer five core business questions:
+The dashboard was developed to answer five core commercial questions:
 
-1. 📈 **Revenue Growth:** How does sales performance change over time?
-2. 🍪 **Product Contribution:** Which cookie and chocolate products generate the largest share of revenue?
-3. 🌎 **Regional Performance:** Which states and regions contribute most to overall sales?
-4. 💰 **Profitability:** How much profit is generated and what is the resulting profit margin?
-5. 🎯 **Target Achievement:** How does actual sales performance compare with the defined target?
+1. 📈 **Revenue Growth** — How does sales performance change over time?
+2. 🍪 **Product Contribution** — Which products generate the largest share of revenue?
+3. 🌎 **Regional Performance** — Which states and regions contribute most to sales?
+4. 💰 **Profitability** — How much profit is generated and what is the resulting margin?
+5. 🎯 **Target Achievement** — How does actual performance compare with the target?
 
 ---
 
-## 💡 In-Depth Sales Analysis & Key Insights
+## 💡 In-Depth Sales Analysis & Business Insights
 
-### 1. Strong Revenue Expansion
+### 1. Revenue Expansion
 
-Revenue increased from approximately **$1.1M in 2019** to **$3.6M in 2020**, indicating substantial year-over-year expansion in the analyzed dataset.
+Revenue increased from approximately **$1.1M in 2019** to **$3.6M in 2020**, making time-based performance an important analytical dimension.
 
-This makes the time dimension an important part of the dashboard because overall performance is not only driven by product mix, but also by when sales were generated.
-
-### 2. Product Contribution Concentration
+### 2. Product Contribution
 
 **Chocolate Chip Cookies** generated the highest revenue contribution, followed by **White Chocolate Macadamia**.
 
-This provides a clear starting point for product-level analysis by identifying the products responsible for the largest commercial contribution.
+This identifies the products that contribute most strongly to the commercial portfolio.
 
-### 3. Regional Performance Differences
+### 3. Regional Performance
 
-**Wisconsin** recorded the highest sales performance in the existing analysis, with **New York** following closely.
+**Wisconsin** recorded the highest sales performance in the existing analysis, followed closely by **New York**.
 
-Regional comparison therefore provides another analytical layer for understanding where commercial activity is concentrated.
+Regional comparison helps identify where commercial activity is concentrated.
 
-### 4. Strong Profitability
+### 4. Profitability
 
-The analyzed portfolio generated **$2.71M in profit** from **$4.68M in revenue**, resulting in an overall **57.94% profit margin**.
+The portfolio generated **$2.71M in profit from $4.68M in revenue**, resulting in a **57.94% profit margin**.
 
-This allows the dashboard to move beyond revenue reporting and evaluate the relationship between sales volume and profitability.
+The analysis therefore evaluates profitability alongside revenue rather than treating sales volume as the only performance indicator.
 
 ### 5. Target Achievement
 
-Actual sales performance reached **223.9% above the modeled target**, indicating that the analyzed sales portfolio substantially exceeded the target benchmark.
-
-Target tracking is therefore treated as a core performance indicator rather than an additional dashboard metric.
+Actual sales performance reached **223.9% above the modeled target**, providing a dedicated target-vs-actual perspective within the dashboard.
 
 ---
 
 ## 🧠 Analytical Framework
 
-The project follows a business-first analytical workflow:
+**Raw Transactions → Data Preparation → Star Schema Modeling → DAX KPI Development → Product Analysis → Regional Analysis → Time Analysis → Target Tracking → Business Insights**
 
-**Raw Transactions → Data Preparation → Data Modeling → KPI Development → Product Analysis → Regional Analysis → Time Analysis → Target Tracking → Business Insights**
-
-This approach keeps the dashboard focused on **decision-support questions** rather than presenting charts independently.
+The workflow is designed around business questions and decision-support outcomes rather than isolated visuals.
 
 ---
 
 ## 🖼️ Dashboard Visual Tour & Storytelling
 
-### 1. Executive Overview Dashboard
+### 1. Executive Overview
+
 <p align="center">
-  <img src="./Overview%20Page.jpg" alt="Cookies & Chocolate Sales Performance — Overview Dashboard" width="95%">
+  <img src="./Dashboard%20Previews/Overview%20Page.jpg" alt="Cookies & Chocolate Sales Performance — Overview Dashboard" width="95%">
 </p>
 
-The executive overview consolidates the core commercial KPIs and provides a high-level view of revenue, profit, orders, target achievement, product contribution, regional performance, and sales trends.
+The executive overview brings together the main commercial KPIs, sales trends, product contribution, regional performance, profitability, and target tracking.
 
-### 2. Data Model & Relationships
+### 2. Data Model
+
 <p align="center">
-  <img src="./Model%20Page.png" alt="Cookies & Chocolate Sales Performance — Power BI Data Model" width="95%">
+  <img src="./Dashboard%20Previews/Model.png" alt="Cookies & Chocolate Sales Performance — Power BI Data Model" width="95%">
 </p>
 
-The model view shows the dimensional structure connecting transactional orders with product, customer, and date information to support consistent analytical reporting.
+The semantic model connects the transactional order fact table with reusable customer, product, and date dimensions to support consistent filtering and aggregation.
+
+---
 
 ## 🏗️ Data Architecture & Star Schema
 
-The project uses a **Star Schema** to separate transactional sales data from descriptive business dimensions.
+The project uses a **Star Schema** to separate transactional sales records from descriptive business dimensions.
 
 ### Fact Table
 
-- `fact_orders` — Transaction-level order records, sales values, product references, customer references, and order dates
+- **`fact_orders`** — Transaction-level order records, sales values, product references, customer references, and order dates
 
 ### Dimension Tables
 
-- `dim_date` — Date, year, month, and time-based analysis
-- `dim_product` — Cookie and chocolate product information
-- `dim_customer` — Customer attributes and customer segmentation
-- `dim_target` — Target values used for performance comparison
+- **`dim_date`** — Date and time-based analysis
+- **`dim_product`** — Cookie and chocolate product attributes
+- **`dim_customer`** — Customer and geographic attributes
 
-### 📐 Model Representation
+### 📐 Model Design
 
-The Power BI semantic model connects the order fact table to reusable dimensions, enabling consistent filtering and aggregation across product, customer, regional, and time perspectives.
+The fact table acts as the analytical center of the model while the dimension tables provide reusable filtering and grouping across product, customer, regional, and time perspectives.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- 📊 **Power BI Desktop:** Interactive dashboard development, KPI reporting, filtering, and visual analytics
-- ⚡ **Power Query (M):** Data ingestion, cleaning, transformation, and preparation
-- 📐 **DAX:** Revenue, profit, margin, order volume, target performance, and analytical calculations
-- 🧩 **Data Modeling:** Star Schema design and dimensional relationships
-- 📈 **Business Analytics:** Product contribution, regional performance, time-series analysis, profitability, and target tracking
+- 📊 **Power BI Desktop** — Dashboard development, KPI reporting, filtering, and visualization
+- ⚡ **Power Query (M)** — Data ingestion, cleaning, transformation, and preparation
+- 📐 **DAX** — Revenue, profit, margin, order, target, and analytical calculations
+- 🧩 **Star Schema Modeling** — Fact/dimension architecture and relationship design
+- 📈 **Business Analytics** — Product contribution, regional performance, time-series analysis, profitability, and target tracking
 
 ---
 
 ## 📁 Data Sources
 
-The project uses three Excel workbooks organized in the repository's `Data/` folder:
+The current repository contains the normalized datasets used by the updated Power BI model:
 
 ```
 Data/
-├── Cookie Types.xlsx
-├── Customers.xlsx
-└── Orders.xlsx
+├── dim_customer.xlsx
+├── dim_date.xlsx
+├── dim_product.xlsx
+└── fact_orders.xlsx
 ```
 
-### Dataset Roles
-
-| Dataset | Purpose |
+| Dataset | Role |
 | :--- | :--- |
-| **Cookie Types.xlsx** | Product-level attributes and cookie/chocolate classifications |
-| **Customers.xlsx** | Customer and geographic information |
-| **Orders.xlsx** | Transaction-level sales and order activity |
+| **dim_customer.xlsx** | Customer and geographic attributes |
+| **dim_date.xlsx** | Date dimension for time-based analysis |
+| **dim_product.xlsx** | Product and cookie/chocolate attributes |
+| **fact_orders.xlsx** | Transaction-level order and sales data |
+
+The previous source workbooks have been removed from the repository to keep the project aligned with the current Star Schema model.
 
 ---
 
@@ -167,12 +164,19 @@ Data/
 ```
 Cookies-and-Chocolate-Dashboard/
 │
-├── Dashboard.pbix
-├── Data/
-│   ├── Cookie Types.xlsx
-│   ├── Customers.xlsx
-│   └── Orders.xlsx
+├── Cookies & Chocolate.pbix
 │
+├── Dashboard Previews/
+│   ├── Overview Page.jpg
+│   └── Model.png
+│
+├── Data/
+│   ├── dim_customer.xlsx
+│   ├── dim_date.xlsx
+│   ├── dim_product.xlsx
+│   └── fact_orders.xlsx
+│
+├── LICENSE
 └── README.md
 ```
 
@@ -181,12 +185,13 @@ Cookies-and-Chocolate-Dashboard/
 ## 🚀 How to Explore the Project
 
 1. Download or clone the repository.
-2. Open `Dashboard.pbix` in **Power BI Desktop**.
-3. Review the executive KPIs.
-4. Explore product contribution and regional performance.
+2. Open **`Cookies & Chocolate.pbix`** in Power BI Desktop.
+3. Review the executive overview and core KPIs.
+4. Explore product and regional performance.
 5. Analyze revenue and profit trends over time.
-6. Compare actual performance against the target.
-7. Use the report filters to investigate specific products, customers, and regions.
+6. Compare actual performance against target.
+7. Use the report filters to investigate different customers, products, regions, and dates.
+8. Review the **Dashboard Previews** folder to understand the report structure and data model.
 
 ---
 
@@ -196,7 +201,7 @@ This project demonstrates practical **Data Analyst / BI Developer** capabilities
 
 - Business question formulation
 - Data cleaning and transformation
-- Dimensional data modeling
+- Star Schema data modeling
 - DAX measure development
 - KPI design
 - Product and regional performance analysis
@@ -204,7 +209,7 @@ This project demonstrates practical **Data Analyst / BI Developer** capabilities
 - Target-vs-actual analysis
 - Interactive Power BI storytelling
 
-The objective is to demonstrate how raw transactional data can be transformed into a structured analytical product that supports commercial decision-making.
+The objective is to demonstrate how transactional sales data can be transformed into a structured analytical product that supports commercial decision-making.
 
 ---
 
